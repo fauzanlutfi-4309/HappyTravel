@@ -3,34 +3,374 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Travel</title>
+    <title>HappyTravel</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello Word</h1>
-    <h2>Hello Word</h2>
-    <h3>Hello Word</h3>
-    <h4>Hello Word</h4>
-    <h5>Hello Word</h5>
-    <h6>Hello Word</h6><br>
-    <h3>Anggota Kelompok :</h3>
-    <table border="0">
-        <tr>
-            <td style="width: 230px;">
-                <li>Raffa Nur Listiawan D E S</li>
-                <li>Ardiyan Rizki Nugraha</li>
-                <li>Dika Isnaida</li>
-                <li>Fauzan Lutfi Muzaki</li>
-                <li>Muhammad Taqiyuddin</li>
-            </td>
-            <td>
-                (21.11.4268) <br>
-                (21.11.4275) <br>
-                (21.11.4292) <br>
-                (21.11.4309) <br>
-                (21.11.4328)
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="assets/image/logo.png" alt="HappyTravel Logo" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Why Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">How to Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light mr-2 mb-2" href="#" role="button">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="#" role="button">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-            </td>
-        </tr>
-    </table>
+    <!--Header-->
+    <header class="header-section">
+        <div class="container">
+            <h1>Explore Indonesia's Wonders<br>Your Gateway to Adventure</h1>
+            <p>Embark on a journey through the enchanting landscapes and vibrant <br> cultures of Indonesia. Start your exploration today and unlock the <br> treasures of Indonesia with our immersive travel experiences.</p>
+            <div class="col-cta">
+                <div class="row text-left m-2">
+                    <div class="col-md-3 mt-2 mb-3">
+                        <h6>From</h6>
+                        <input type="text" class="form-control" id="fromCity" placeholder="Select a city">
+                    </div>
+                    <div class="col-md-3 mt-2 mb-3">
+                        <h6>To</h6>
+                        <input type="text" class="form-control" id="toCity" placeholder="Select a city">
+                    </div>
+                    <div class="col-md-2 mt-2 mb-3">
+                        <h6>Check In</h6>
+                        <input type="date" class="form-control" id="checkIn" placeholder="Choose a date">
+                    </div>
+                    <div class="col-md-2 mt-2 mb-3">
+                        <h6>Check Out</h6>
+                        <input type="date" class="form-control" id="checkOut" placeholder="Choose a date">
+                    </div>
+                    <div class="col-md-2 mt-4 mb-3">
+                        <button type="submit" class="btn btn-primary mb-2">Check Availability</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Top Destination-->
+    <section class="top-destinations">
+        <div class="container text-center">
+            <h3>Top Destinations</h3>
+            <div class="row">
+                <div class="col-md-4 row-des">
+                    <img src="assets/image/group-des1.png" class="img-fluid g1" alt="Destination 1">
+                </div>
+                <div class="col-md-5 row-des">
+                    <img src="assets/image/group-des2.png" class="img-fluid g2" alt="Destination 2">
+                </div>
+                <div class="col-md-3 row-des">
+                    <img src="assets/image/group-des3.png" class="img-fluid g3" alt="Destination 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-tour">
+        <div class="container text-center">
+            <h3>Watch Our Video Tour</h3>
+            <div class="video-container">
+                <img src="assets/image/video-thumbnail.jpg.png" class="img-fluid" alt="Video Thumbnail">
+                <button class="play-button" onclick="playVideo()">&#9658;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Indonesia-->
+    <section class="explore-indonesia">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Let's explore Indonesia with HappyTravel</h3>
+                    <p>Traveling can be a great way to explore the world and learn about new cultures. What do you want to get out of your trip? Do you want to relax on a beach, learn about a new culture, or experience new foods? Setting your goals will help you plan your trip and make the most of your time.</p>
+                    <p>There are so many amazing places to visit, it can be hard to decide where to go. So do some research to find a destination that aligns with your travel goal and budget.</p>
+                <button class="btn btn-primary button">Learn More</button>
+                </div>
+                <div class="col-md-3 ">
+                    <img src="assets/image/explore1.png" class="img-fluid" alt="Explore 1">
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/image/explore2.png" class="img-fluid" alt="Explore 2">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--We chose us-->
+    <section class="why-choose-us">
+        <div class="container text-center">
+            <h3><br>Why Choose Us</h3>
+                <p>There are many advantages to booking your travel tickets over other competitors</p>
+                <div class="row card-wcu text-left">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="assets/image/wcu-ic1.png" class="img-fluid rounded-circle mb-3" alt="">
+                                <h6 class="card-title">Many Destinations</h6>
+                                <p class="card-text">There are many choices of destinations that you can find according to your needs and desires</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="assets/image/wcu-ic2.png" class="img-fluid rounded-circle mb-3" alt="">
+                                <h6 class="card-title">Personalized Itineraries</h6>
+                                <p class="card-text">We understand that every traveler is unique, which is why we tailor our itineraries to suit your preferences, interests, and budget</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="assets/image/wcu-ic3.png" class="img-fluid rounded-circle mb-3" alt="">
+                                <h6 class="card-title">Sustainable Travel Practices</h6>
+                                <p class="card-text">We are committed to preserving Indonesia's natural beauty and cultural heritage for future generations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!--Traveler Experience-->
+    <section class="traveler-experience">
+        <div class="container">
+            <h3>Traveler's Experience</h3>
+            <p>Here are some awesome feedback from our travelers</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="assets/image/traveler1.png" class="img-fluid rounded-circle mb-3" alt="Traveler 1">
+                                </div>
+                                <div class="col-md-8">
+                                    <h7 class="card-title"><br>Aaron Leonhart</h7>
+                                </div>
+                            </div>
+                            <p class="card-text">Together with this travel agent, I explored the stunning natural beauty of Indonesia in Flores, Nusa Tenggara, and Kelimutu National Park. Every moment was unforgettable, thanks to our guide's knowledge and passion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="assets/image/traveler2.png" class="img-fluid rounded-circle mb-3" alt="Traveler 1">
+                                </div>
+                                <div class="col-md-8">
+                                    <h7 class="card-title"><br>Sarah Jessica</h7>
+                                </div>
+                            </div>
+                            <p class="card-text">They not only took me to amazing places but also provided in-depth local information on cultures of Nusa Penida. My adventures on Mount Batur and diving in Raja Ampat were unforgettable. Thank you for an unforgettable experience!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="assets/image/traveler3.png" class="img-fluid rounded-circle mb-3" alt="Traveler 1">
+                                </div>
+                                <div class="col-md-8">
+                                    <h7 class="card-title"><br>Ronald Richard</h7>
+                                </div>
+                            </div>
+                            <p class="card-text">My journey with this travel agency was nothing short of exceptional. Thanks to their recommendations, I had an incredible experience exploring Bali's cultural treasures. Their commitment to sustainable travel and connecting with local communities in a respectful way is exemplary. I highly recommend it for anyone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FAQ-->
+    <section class="faq">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 text-left">
+                    <h3>You have any questions? We can help answer it.</h3>
+                    <p class="p1">Everything you need to know, in one place just take a look from this part.</p>
+                    <div class="contact-us">
+                        <img src="assets/image/foto-faq.png" class="foto-faq">
+                        <h6>Don't see your question?</h6>
+                        <p>You can ask through our admin to be answered via email regarding your question.</p>
+                        <button class="btn btn-primary">Contact Us</button>
+                    </div>
+                </div>
+                <div class="col-md-6 question">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        How many hotels are listed on HappyTravel?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    There are currently 353 hotel listings on HappyTravel, so you’ll always be able to find the perfect hotel - wherever you're going! Just try HappyTravel now.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How do I book a trip?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Booking a trip is easy with HappyTravel. Just select your destination, choose your dates, and complete the booking process with your preferred payment method.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Are there any discounts or promotions available?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Yes, HappyTravel frequently offers discounts and promotions. Be sure to subscribe to our newsletter to stay updated on the latest deals.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Can I make changes to my booking after it's been confirmed?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Yes, you can make changes to your booking. Please contact our support team for assistance with any modifications.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Do you have travel insurance available?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Yes, we offer travel insurance options to ensure you are protected throughout your journey. Please check the details during your booking process.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Subscribe-->
+    <section class="subscribe">
+        <div class="container text-center">
+            <div class="bg-subs row">
+                <div class="col-md-6">
+                    <h4>Subscribe to get information, latest news and other interesting offers.</h4>
+                </div>
+                <div class="col-md-6">
+                    <form class="form-inline justify-content-center">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <br>
+                    <img src="/assets/image/logo-white.png" alt="HappyTravel Logo" height="40">
+                    <p>© Copyright 2024</p>
+                </div>
+                <div class="col-md-2 footer-links text-left">
+                    <a href="#">Products</a><br>
+                    <a href="#">Flight</a><br>
+                    <a href="#">Hotel</a><br>
+                    <a href="#">Train</a><br>
+                    <a href="#">Attraction</a><br>
+                </div>
+                <div class="col-md-2 footer-links text-left">
+                    <a href="#">About</a><br>
+                    <a href="#">How to Book</a><br>
+                    <a href="#">Contact</a><br>
+                    <a href="#">Support</a><br>
+                    <a href="#">Partners</a><br>
+                    <a href="#">Blog</a><br>
+                </div>
+                <div class="col-md-2 footer-links text-left">
+                    <a href="#">Help Center</a><br>
+                    <a href="#">Terms & Conditions</a><br>
+                    <a href="#">Privacy & Policy</a><br>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-contact">
+                        <p>Email: happytravel@gmail.com</p>
+                        <p>Follow us on:
+                            <div class="medsos">
+                                <a href="#"><img src="/assets/image/ic-fb.png" alt="Facebook" height="20"></a>
+                                <a href="#"><img src="/assets/image/ic-tw.png" alt="Twitter" height="20"></a>
+                                <a href="#"><img src="/assets/image/ic-yt.png" alt="Instagram" height="20"></a>
+                            </div>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

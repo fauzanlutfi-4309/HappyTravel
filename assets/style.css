@@ -1,0 +1,274 @@
+/*Body --------------------------------------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+}
+/*Navbar ------------------------------------------------------------*/
+
+.navbar {
+    right: 0;
+    left: 0;
+    background-color: #5eb8fe;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+/*Header ------------------------------------------------------------*/
+.header-section {
+    background-image: url('image/background.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.header-section h1 {
+    margin-top: 100px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.header-section p {
+    font-size: 1.2em;
+    margin: 60px 0px;
+}
+.col-cta {
+    border-radius: 10px;
+    background-color: white;
+    color: #4737ff;
+}
+.col-cta h6{
+    font-weight: bold;
+}
+
+/*Top Destination ---------------------------------------------------*/
+.top-destinations h3{
+    margin-top: 50px;
+    font-weight: bold;
+}
+.top-destinations img, .explore-indonesia img {
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.top-destinations .container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.g1 { height: 350px;}
+.g2 { height: 350px;}
+.g3 { height: 350px;}
+
+.row > [class*='row-des'] {
+    padding: 3px;
+}
+
+/*Video Tour -------------------------------------------------------*/
+.video-tour{
+    margin-top: 30px;
+    background-image: url('image/bg-vedeo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.video-tour h3{
+    padding-top: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 70px;
+}
+
+.video-container img {
+    border-radius: 10px;
+    width: 890;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    background: rgba(0, 44, 241, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.explore-indonesia {
+    margin-top: 30px;
+}
+.explore-indonesia h3 {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/*Why Choose Us -----------------------------------------------------*/
+.why-choose-us {
+    margin-top: 50px;
+    background-image: url('image/bg-wcu.png');
+    background-size: cover;
+    background-position: center;
+}
+.why-choose-us h3{
+    margin-top: 40px;
+    padding-top: 40px;
+    font-weight: bold;
+}
+.why-choose-us h6{
+    font-weight: bold;
+}
+.why-choose-us .card-wcu {
+    padding-bottom: 60px;
+}
+
+.card {
+    height: 100%;
+}
+.why-choose-us .card {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.why-choose-us .card-body {
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.why-choose-us img{
+    height: 50px;
+}
+
+/*Traveler Experiencw -----------------------------------------------*/
+.traveler-experience .card {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.traveler-experience .card-body {
+    background: #e5ecfd;
+    border-radius: 10px;
+}
+
+.traveler-experience h3 {
+    margin-top: 60px;
+    margin-top: 60px;
+    font-weight: bold;
+}
+.traveler-experience h7 {
+    font-weight: bold;
+    color: #4737ff;
+}
+
+/*FAQ ---------------------------------------------------------------*/
+.faq{
+    padding-top: 100px;
+    margin-top: 100px;
+    background-image: url('image/bg-faq.png');
+    background-size: cover;
+    background-position: center;
+}
+.faq h3{
+    font-weight: bold;
+    margin-left: 10px;
+}
+.faq .p1{
+    margin-left: 10px;
+}
+.faq h6{
+    font-weight: bold;
+}
+
+.faq .accordion .card-header {
+    background: #f8f9fa;
+    border: none;
+}
+
+.faq .accordion .btn-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-us {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.faq .question{
+    padding-bottom: 100px;
+}
+
+.foto-faq {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/*Subsscribe --------------------------------------------------------*/
+.subscribe {
+    background: #fff;
+    padding-bottom: 40px;
+}
+.bg-subs{
+    background-image: url('image/bg-subs.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.subscribe form{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.subscribe h4{
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/*Footer ------------------------------------------------------------*/
+.footer {
+    background-image: url(/assets/image/bg-footer.png);
+    color: white;
+    padding: 40px 0;
+}
+
+.footer img {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    margin-top: 20px;
+}
+
+.footer-contact p {
+    margin: 10px 0;
+}
+
+.footer-contact img {
+    margin-left: 10px;
+}
