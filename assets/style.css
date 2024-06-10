@@ -2,16 +2,11 @@
 body {
     font-family: Arial, sans-serif;
 }
+
 /*Navbar ------------------------------------------------------------*/
 
 .navbar {
-    right: 0;
-    left: 0;
     background-color: #5eb8fe;
-}
-
-.navbar-brand img {
-    max-height: 50px;
 }
 
 /*Header ------------------------------------------------------------*/
@@ -64,6 +59,23 @@ body {
 .g2 { height: 350px;}
 .g3 { height: 350px;}
 
+@media (max-width: 575.98px) {
+    .g1 {
+      width: 150px;
+      height: 100%;
+    }
+
+    .g2 {
+      width: 200px;
+      height : 100%;
+    }
+
+    .g3 {
+      width: 150px;
+      height : 100%
+    }
+}
+
 .row > [class*='row-des'] {
     padding: 3px;
 }
@@ -105,6 +117,16 @@ body {
     color: white;
     cursor: pointer;
 }
+/* Explore Indonesia */
+.g4, .g5{
+    display: none;
+}
+@media (min-width: 768px) {
+    .g4, .g5 {
+      display: block;
+    }
+}
+
 .explore-indonesia {
     margin-top: 30px;
 }
